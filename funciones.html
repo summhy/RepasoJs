@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<input id="valor1"> * 
+<input id="valor2">
+
+<input id="valor3"> * 
+<input id="valor4">
+
+<input id="valor5"> * 
+<input id="valor6">
+<button onclick="calcular()">Multiplicar</button>
+    <h1 id="h1-resultado"></h1>
+
+    <h1 id="h2-resultado"></h1>
+
+    <h1 id="h3-resultado"></h1>
+
+
+<script>
+
+    
+    function calcular(){
+
+        function multiplicacion(num1, num2 = 1){
+            var resultado = num1 * num2;
+            return resultado;
+        }
+
+        const h1 =  document.getElementById("h1-resultado");
+        const h2 =  document.getElementById("h2-resultado");
+        const h3 =  document.getElementById("h3-resultado");
+        const num1 =  document.getElementById("valor1");
+        const num2 =  document.getElementById("valor2");
+
+        const num3=  document.getElementById("valor3");
+        const num4 =  document.getElementById("valor4");
+
+
+        const num5=  document.getElementById("valor5");
+        const num6 =  document.getElementById("valor6");
+
+        h1.innerHTML = multiplicacion(num1.value, num2.value);
+        h2.innerHTML = multiplicacion(num3.value, num4.value);
+        h3.innerHTML = multiplicacion(num5.value, num6.value);
+    }
+
+    function calcular2(){
+        function multiplicacion(num1, num2 = 1){
+            var resultado = num1 * num2 * -1;
+            return resultado;
+        }
+}
+
+    }
+
+
+   
+
+   
+
+
+   
+
+
+
+</script>
+</body>
+</html>

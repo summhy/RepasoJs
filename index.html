@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<ul>
+    <li onmouseover="alerta(1)">Uno</li>
+    <li onmouseover="alerta(2)">Dos</li>
+    <li onmouseover="alerta(3)">Tres</li>
+    <li onmouseover="alerta(4)">Cuatro</li>
+    <li onmouseover="alerta(5)">Cinco</li>
+</ul>
+<div id="texto">
+
+</div>
+</body>
+<script>
+var nombre = ['','uno','dos','tres','cuatro','cinco']
+    function alerta(valor){
+        document.getElementById("texto").innerText = 'hola '+ nombre[valor]  
+    }
+</script>
+
+</html>

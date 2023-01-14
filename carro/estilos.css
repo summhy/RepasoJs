@@ -1,0 +1,21 @@
+body {
+    padding-top: 80px;
+    background-color: rgba(239, 191, 191, 0.5);
+  }
+  
+  .show-cart li {
+    display: flex;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+  .card-img-top {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+  }
+  nav{
+    background-color: black;
+    opacity: 50%;
+  }

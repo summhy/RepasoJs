@@ -1,0 +1,19 @@
+<script>
+
+function sum(porcentaje,...productos) {
+    //console.log(a);
+    console.log(productos);
+  let total = 0;
+  for (const arg of productos) {
+    total += arg;
+  }
+  return total - (total * porcentaje/100);
+} 
+
+//console.log(sum(1, 2, 3));
+// Expected output: 6
+
+console.log(sum(20, 9990, 12450, 5670, 4500, 3000));
+// Expected output: 10
+
+</script>

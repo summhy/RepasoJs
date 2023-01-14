@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label id="mensaje"> </label>
+    <input type="text" id="txtmensaje" hidden>
+    <button onclick="cambiar()" id="btnEditar">Editar</button>
+    <button onclick="guardar()" id="btnGuardar" hidden>Guardar</button>
+
+    <script> 
+    var arreglo =["Hola 2"];
+    const input = document.getElementById("txtmensaje");
+    const label = document.getElementById("mensaje");
+    const editar = document.getElementById("btnEditar");
+    const guarda = document.getElementById("btnGuardar");
+
+    input.value = arreglo[0];
+    label.textContent = arreglo[0];
+
+
+    function cambiar(){
+        
+        input.hidden = false;
+        label.hidden = true;
+        editar.hidden = true;
+        guarda.hidden = false;
+
+    }
+
+    function guardar(){
+        console.log(arreglo);
+        arreglo[0] = input.value;
+        console.log(arreglo);
+        input.value = arreglo[0];
+        label.textContent = arreglo[0];
+
+        input.hidden = true;
+        label.hidden = false;
+        editar.hidden = false;
+        guarda.hidden = true;
+    }
+    </script>
+    
+</body>
+</html>

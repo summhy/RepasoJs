@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+ let monto_factura = 100;
+ let aux = 1;
+
+ function cotizacion(){
+    let monto_total = 3000;
+    let aux = 10;
+    monto_factura = 200;
+    console.log("2.1 function " +monto_factura);
+    console.log("2.2 function " +monto_total);
+    console.log("2.3 function " +aux);
+ }
+
+ console.log("1.1 fuera de la funcion " +monto_factura);
+ console.log("1.2 fuera de la funcion " +aux);
+ aux = aux + 1;
+ cotizacion();
+
+
+
+ console.log("3.1 fuera de la funcion " +monto_factura);
+ //console.log("3.2 fuera de la funcion " +monto_total);
+ console.log("3.3 fuera de la funcion " +aux);
+ 
+
+
+</script>
+
+
+
+</body>
+</html>
