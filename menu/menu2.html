@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <nav>
+        <button><a onclick="mostrarRegistro()">Registro</a></button>
+        <button class="active" onclick="mostrarLogin()">Login</button>
+    </nav>
+
+
+
+
+        <div id="login">
+            <h1>Login</h1>
+            <label for=""> Nombre:<input type="text"></label>
+            <label for=""> password:<input type="password"></label>
+            <button>Login</button>
+        </div>
+
+
+        <div id="registro" hidden >
+            <h1>Registro</h1>
+            <label for=""> Nombre:<input type="text"></label>
+            <label for=""> email:<input type="text"></label>
+            <label for=""> password:<input type="password"></label>
+            <label for=""> password:<input type="password"></label>
+            <button>Registro</button>
+        </div>
+
+        <script>
+
+            function mostrarRegistro(){
+                document.getElementById("login").hidden = true;
+                document.getElementById("registro").hidden = false;
+
+            }
+
+            function mostrarLogin(){
+                document.getElementById("login").hidden = false;
+                document.getElementById("registro").hidden = true;
+
+            }
+
+        </script>
+ 
+</body>
+</html>
